@@ -20,7 +20,7 @@ const FirstStage: React.FC = () => {
   useEffect(() => {
     const timeoutId = setTimeout(
       () => dispatch(influencerActions.setName(name)),
-      1000
+      500
     );
     return () => clearTimeout(timeoutId);
   }, [name, dispatch]);
