@@ -10,12 +10,10 @@ form {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 .input {
   width: 70%;
-  margin-bottom: 20px;
   margin-right: 1.5rem;
 }
 

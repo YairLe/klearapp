@@ -50,12 +50,13 @@ const ThirdStage: React.FC = () => {
         <div>3/3</div>
       </div>
       <div>
-        {brands.map((brand, index) => (
-          <div key={brand + index}>
-            {`@ ${brand}`}
-            <br />
-          </div>
-        ))}
+        {brands.length > 0 &&
+          brands.map((brand, index) => (
+            <div key={brand + index}>
+              {`@ ${brand}`}
+              <br />
+            </div>
+          ))}
       </div>
     </div>
   );

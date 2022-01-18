@@ -4,7 +4,7 @@ const influencerSlice = createSlice({
   initialState: {
     name: "",
     selected: { lifestyle: false, beauty: false, food: false },
-    brands: [""],
+    brands: [] as string[],
   },
   reducers: {
     setName(state, action) {
