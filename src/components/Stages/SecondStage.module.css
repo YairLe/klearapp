@@ -1,0 +1,29 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.checkedDiv {
+  display: flex;
+  width: 6rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  background: transparent;
+  color: navy;
+  border: none;
+}

@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 70%;
+  margin-bottom: 20px;
+  margin-right: 1.5rem;
+}
+
+.divEnding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  background: transparent;
+  background: lightblue;
+  border-radius: 5px;
+  border: none;
+  border: none;
+  color: #ffffff;
+}
+
+.btn:disabled {
+  background: gray;
+  cursor: not-allowed;
+}
+
+.backButton {
+  background: transparent;
+  color: navy;
+  border: none;
+  margin: 0;
+}

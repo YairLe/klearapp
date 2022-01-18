@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { Navigate, Route, Routes } from "react-router-dom";
+import styles from "./App.module.css";
+import FirstStage from "./components/Stages/FirstStage";
+import SecondStage from "./components/Stages/SecondStage";
+import ThirdStage from "./components/Stages/ThirdStage";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.main}>
+      <Routes>
+        <Route path="/stages/1" element={<FirstStage />} />
+        <Route path="/stages/2" element={<SecondStage />} />
+        <Route path="/stages/3" element={<ThirdStage />} />
+        <Route path="*" element={<Navigate replace to="/stages/1" />}></Route>
+      </Routes>
     </div>
   );
-}
+};
 
 export default App;
