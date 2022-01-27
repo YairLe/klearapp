@@ -1,14 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit";
-import influencerSlice from "./influencer-slice";
-import { persistReducer } from "redux-persist";
 import { combineReducers } from "redux";
-import storage from "redux-persist/lib/storage";
+import { persistReducer } from "redux-persist";
+import storageSession from "redux-persist/lib/storage/session";
+import influencerSlice from "./influencer-slice";
 
 const reducers = combineReducers({ influencer: influencerSlice });
 
 const persistConfig = {
   key: "root",
-  storage,
+  storage: storageSession,
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);
