@@ -1,4 +1,5 @@
 interface ISelected {
+  [key: string]: boolean;
   lifestyle: boolean;
   beauty: boolean;
   food: boolean;

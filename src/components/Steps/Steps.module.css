@@ -1,0 +1,12 @@
+.button {
+  background: transparent;
+  color: navy;
+  border: none;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.buttonDiv {
+  display: flex;
+  justify-content: center;
+}

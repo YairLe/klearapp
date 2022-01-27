@@ -43,3 +43,8 @@ form {
   border: none;
   margin: 0;
 }
+
+.listStyle {
+  height: 10rem;
+  overflow-y: scroll;
+}
